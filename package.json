@@ -3,27 +3,59 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/brick-dev63"
   },
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Components for brick's use",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "Rick Bowman",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.2",
     "@rollup/plugin-typescript": "^8.3.0",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/builder-webpack5": "^6.4.9",
+    "@storybook/manager-webpack5": "^6.4.9",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.4.9",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.4.0",
     "@types/react": "^17.0.38",
-    "react": "^17.0.2",
+    "babel-jest": "^27.4.5",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.4.5",
     "rollup": "^2.63.0",
     "rollup-plugin-dts": "^4.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.45.2",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
     "typescript": "^4.5.4"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@brick-dev63/brick-style-dictionary": "^0.0.1"
+  }
 }
