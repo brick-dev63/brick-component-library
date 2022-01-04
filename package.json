@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/brick-dev63"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Components for brick's use",
   "scripts": {
     "rollup": "rollup -c",
