@@ -1,16 +1,21 @@
 import React from "react";
-import { ColorBaseRed } from "@brick-dev63/brick-style-dictionary";
 import "./Button.scss";
 
+export enum ButtonSize {
+  Large = "large",
+  Small = "small",
+}
 export interface ButtonProps {
   label: string;
+  secondary?: boolean;
+  size?: ButtonSize;
 }
 
-const Button = (props: ButtonProps) => {
-  const buttonStyle = {
-    color: ColorBaseRed,
-  }
-  return <button style={buttonStyle}>{props.label}</button>;
+const Button = ({ label, secondary, size }: ButtonProps) => {
+  const classList = `button ${
+    size == ButtonSize.Large ? "button--large" : ""
+  } ${secondary ? "button--secondary" : ""}`;
+  return <button className={classList}>{label}</button>;
 };
 
 export default Button;

@@ -3,11 +3,13 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/brick-dev63"
   },
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "Components for brick's use",
   "scripts": {
     "rollup": "rollup -c",
     "test": "jest",
+    "test:i": "jest --watch",
+    "test:c": "jest --collectCoverage",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -56,6 +58,6 @@
   ],
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@brick-dev63/brick-style-dictionary": "^0.0.1"
+    "@brick-dev63/brick-style-dictionary": "^0.0.3"
   }
 }

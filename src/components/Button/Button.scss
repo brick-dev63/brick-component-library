@@ -1,5 +1,19 @@
 @import "~@brick-dev63/brick-style-dictionary/dist/index.scss";
-button {
-  background-color: $color-base-green;
-  font-size: 60px;
+
+.button {
+  background-color: $color-base-primary;
+  border: none;
+  border-radius: 0.3125rem;
+  color: $color-base-white;
+  cursor: pointer;
+  font-size: $size-font-body;
+  padding: 0.3125rem;
+
+  &--large {
+    padding: 0.75rem 6.3125rem;
+  }
+
+  &--secondary {
+    background-color: $color-base-secondary;
+  }
 }

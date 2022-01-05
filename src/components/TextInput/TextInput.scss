@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500&display=swap");
+@import "~@brick-dev63/brick-style-dictionary/dist/index.scss";
+
+.text-input {
+  background-color: $color-base-white;
+  color: $color-base-gray-dark;
+  font-family: $family-base;
+  font-size: $size-font-body;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  &__separator {
+    margin-right: 0.25rem;
+  }
+
+  &__input {
+    font-family: $family-base;
+    font-size: $size-font-body;
+    padding: 0.5rem;
+    border: 1px solid $color-base-gray-dark;
+    border-radius: 0.625rem;
+  }
+
+  &--large {
+    padding: 0.75rem 6.3125rem;
+  }
+}
