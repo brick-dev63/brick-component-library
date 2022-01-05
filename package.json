@@ -3,15 +3,18 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/brick-dev63"
   },
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Components for brick's use",
   "scripts": {
+    "build": "npm run clean && npm run rollup",
+    "build-storybook": "build-storybook",
+    "clean": "rm -rf dist",
+    "prepublish": "npm run build",
     "rollup": "rollup -c",
     "test": "jest",
     "test:i": "jest --watch",
     "test:c": "jest --collectCoverage",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "start-storybook -p 6006"
   },
   "author": "Rick Bowman",
   "license": "ISC",
