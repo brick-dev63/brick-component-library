@@ -1,7 +1,7 @@
 {
-  "name": "@brick-dev63/brick-component-library",
+  "name": "@rickbowman63-dev63/brick-component-library",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/brick-dev63"
+    "registry": "https://npm.pkg.github.com/rickbowman63-dev63"
   },
   "version": "0.2.3",
   "description": "Components for brick's use",
@@ -61,6 +61,6 @@
   ],
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@brick-dev63/brick-style-dictionary": "^0.0.3"
+    "@rickbowman-dev63/brick-style-dictionary": "0.0.4"
   }
 }
