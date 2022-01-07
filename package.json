@@ -1,9 +1,9 @@
 {
-  "name": "@rickbowman63-dev63/brick-component-library",
+  "name": "@rickbowman-dev63/brick-component-library",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/rickbowman63-dev63"
   },
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Components for brick's use",
   "scripts": {
     "build": "npm run clean && npm run rollup",
